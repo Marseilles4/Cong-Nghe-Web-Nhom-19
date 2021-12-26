@@ -3,3 +3,17 @@
     height: 1.5em;
     position: relative;
 }
+.card-body .story-img{
+    width: 56px;
+    height: 56px;
+    position: relative;
+    border-width: 2px !important;
+}
+.post-profile-img{
+    width: 35px;
+    height: 35px;
+    position: relative;
+}
+.post-user{
+    font-weight: 500;
+}
