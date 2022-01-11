@@ -238,13 +238,14 @@ body{
     margin-top: -20px;
     align-items: center;
 }
-.reaction-wrapper .icon{
-    height: 25px;
-    margin: 0;
+.reaction-wrapper i{
+    font-size: 25px;
     margin-right: 20px;
+    transition: .4s;
 }
-.reaction-wrapper .icon-save{
-    margin-left: auto;
+.fas{
+    color: #f50057;
+    transition: .4s;
 }
 .right-col{
     padding: 18px;
