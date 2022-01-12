@@ -1,3 +1,25 @@
+<?php
+	session_start();
+
+    include'config.php';
+	if(isset($_POST['login'])){
+		$username=$_POST['username'];
+		$password=$_POST['password'];
+		if($username==''||$password==''){
+			echo "<script>alert('Điền đầy đủ thông tin')</script>";
+		}else{
+			$password=md5($password);
+			$sql="SELECT * FROM `users` WHERE username='$username' and password='$password'";
+			$result=mysqli_query($conn,$sql);
+			$num_rows=mysqli_num_rows($result);
+			if($num_rows!=0){
+				echo "<script>alert('Đăng nhập thành công')</script>";
+			}else{
+				echo "<script>alert('Đăng nhập ko thành công')</script>";
+			}
+		}
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,14 +47,14 @@
 						<div class="card-body">
 							<form method="post">
 								<div class="form-group py-1">
-									<input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+									<input type="text" class="form-control" name="username" id="" aria-describedby="helpId"
 										placeholder="Phone Number, Username or Email">
 								</div>
 								<div class="form-group py-1">
-									<input type="password" class="form-control" name="" id="" aria-describedby="helpId"
+									<input type="password" class="form-control" name="password" id="" aria-describedby="helpId"
 										placeholder="Password">
 								</div>
-								<input type="submit" value="Log In" class="mt-2 btn btn-primary w-100">
+								<input type="submit" name="login" value="Log In" class="mt-2 btn btn-primary w-100">
 							</form>
 							<div class="or">
 								<span>OR</span>

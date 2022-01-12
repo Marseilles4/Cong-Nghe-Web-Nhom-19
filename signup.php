@@ -1,36 +1,6 @@
 <?php
+    session_start();
     include'config.php';
-
-    if (isset($_POST['signup'])) {
-        $email = $_POST['email'];
-        $username = $_POST['username'];
-        $password = md5($_POST['password']);
-        $cpassword = md5($_POST['cpassword']);
-    
-        if ($password == $cpassword) {
-            $sql = "SELECT * FROM users WHERE email='$email'";
-            $result = mysqli_query($conn, $sql);
-            if (!$result->num_rows > 0) {
-                $sql = "INSERT INTO users (email, username, password)
-                        VALUES ('$email', '$username', '$password')";
-                $result = mysqli_query($conn, $sql);
-                if ($result) {
-                    echo "<script>alert('Đăng ký thành công.')</script>";
-                    $email = "";
-                    $username = "";
-                    $_POST['password'] = "";
-                    $_POST['cpassword'] = "";
-                } else {
-                    echo "<script>alert('Đăng ký thất bại')</script>";
-                }
-            } else {
-                echo "<script>alert('Email này đã tồn tại')</script>";
-            }
-            
-        } else {
-            echo "<script>alert('password không khớp')</script>";
-        }
-    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -60,7 +30,7 @@
                         Log in with Facebook
                     </button> 
                     <p class="or">OR</p>
-                    <form>
+                    <form method="post">
                         <div class="form-group">
                             <input type="text" class="form-control" name="email"  placeholder="Mobile Number or Email">
                         </div>
@@ -72,12 +42,30 @@
                         </div>
                         <button type="submit" class="btn btn-primary btn-block" name="signup">Sign up</button>
                     </form>
+                    <?php 
+                        if(isset($_POST['signup'])){
+                            $email=$_POST['email'];
+                            $username=$_POST['username'];
+                            $password=$_POST['password'];
+                            if($email==''||$username==''||$password==''){
+                                echo "<script>alert('Điền đầy đủ thông tin')</script>";
+                            }else{
+                                $password=md5($password);
+                                $sql="INSERT INTO users (email, username, password) 
+                                    VALUES('$email','$username','$password')";
+                                $result= mysqli_query($conn, $sql);
+                                if($result){
+                                echo "<script>alert('Đăng ký thành công')</script>";
+                                }   
+                            }
+                            mysqli_close($conn);
+                        }
+                    ?>
                     <p class="terms">By signing up, you agree to our <b>Terms, Data Policy</b> and <b>Cookies Policy</b>.</p>
                 </div>
                 <div class="right-column-login text-center">
                     <p>do you have an account? <a href="login.php">Log in</a></p>
                 </div>
-                <?php include("insert_user.php"); ?>
             </div>
         </div>
     </div>
