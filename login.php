@@ -9,13 +9,13 @@
 			echo "<script>alert('Điền đầy đủ thông tin')</script>";
 		}else{
 			$password=md5($password);
-			$sql="SELECT * FROM `users` WHERE username='$username' and password='$password'";
+			$sql="SELECT * FROM `user_account` WHERE username='$username' and password='$password'";
 			$result=mysqli_query($conn,$sql);
 			$num_rows=mysqli_num_rows($result);
 			if($num_rows!=0){
-				echo "<script>alert('Đăng nhập thành công')</script>";
+				header("location:index.php");
 			}else{
-				echo "<script>alert('Đăng nhập ko thành công')</script>";
+				header("location:signup.php");
 			}
 		}
 	}
@@ -64,7 +64,7 @@
                                        <p>
                                         <img src="img/facebook-logo.png" class="img-fluid rounded" alt=""
                                         style="width: 18px;height: 18px">
-                                         <a style="text-decoration:none" href="">Login to facebook</a>.
+                                         <a style="text-decoration:none" href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjM4NzI0Mjc2LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D">Login to facebook</a>.
                                          </p>							
                                       </div>								
                                      </div>

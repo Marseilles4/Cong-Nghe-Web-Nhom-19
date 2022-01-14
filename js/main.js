@@ -12,13 +12,11 @@ function Toggle(){
     }
 }
 
-function Toggle1(){
-    if(btn1.classList.contains("far")){
-        btn1.classList.remove("far");
-        btn1.classList.add("fas");
+function Menu(){
+    var menu = document.getElementById("menu-profile");
+    if (menu.style.display === "none") {
+      menu.style.display = "block";
+    } else {
+      menu.style.display = "none";
     }
-    else{
-        btn1.classList.remove("fas");
-        btn1.classList.add("far");
-    }
-}
+  }
