@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <img src="img/1.png" class="brand-img" alt="">
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+            
+             <a><img src="img/home.PNG" class="icon" alt="" ></a>
+                <img src="img/messenger.PNG" class="icon" alt="">
+                <img src="img/add.PNG" class="icon" alt="">
+                <img src="img/explore.PNG" class="icon" alt="">
+                <img src="img/like.PNG" class="icon" alt="">
+                <div >
+                <button style="border: none;background-color:white;border-radius: 60%;width: 22px;height: 22px;">
+                <a href="profile.html">
+                    <div class="icon user-profile">
+                    <img src="img/profile.jpg" alt="avt" class="nut1" style="width: 22px;height: 22px;border-radius:60%";>
+                    </div> 
+                  </a>
+                </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="main">
+        <div class="wrapper">
+            <div class="left-col">
+                <div class="status-wrapper">
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img src="img/story1.png" alt="">
+                        </div>
+                        <p class="username">User_name_1</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img src="img/story2.png" alt="">
+                        </div>
+                        <p class="username">User_name_2</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img src="img/story3.jpg" alt="">
+                        </div>
+                        <p class="username">User_name_3</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img src="img/story4.png" alt="">
+                        </div>
+                        <p class="username">User_name_4</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img src="img/story5.png" alt="">
+                        </div>
+                        <p class="username">User_name_5</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img src="img/story6.png" alt="">
+                        </div>
+                        <p class="username">User_name_6</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img src="img/story7.png" alt="">
+                        </div>
+                        <p class="username">User_name_7</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic">
+                            <img src="img/story8.png" alt="">
+                        </div>
+                        <p class="username">User_name_8</p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="img/story1.png" alt="">
+                            </div>
+                            <p class="username">
+                                User_name_1
+                            </p>
+                        </div>
+                        <img src="img/option.PNG" class="options" alt="">
+                    </div>
+                    <img src="img/wallpapers-desktop-15-4-2018 (7).jpg" class="post-img" alt="">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <i onclick="Toggle()" id="btn" class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-share"></i>
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                        <p class="likes">34.506 likes</p>
+                        <p class="description"><span>username</span>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Et, laboriosam reiciendis. In tempore totam cupiditate itaque, molestias omnis, dolore
+                            eius fugiat ab illum facilis hic labore? Deserunt nostrum itaque nemo.
+                        </p>
+                        <p class="post-time">12 minutes ago</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="More comments...">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="img/story2.png" alt="">
+                            </div>
+                            <p class="username">
+                                User_name_2
+                            </p>
+                        </div>
+                        <img src="img/option.PNG" class="options" alt="">
+                    </div>
+                    <img src="img/wallpapers-desktop-15-4-2018 (8).jpg" class="post-img" alt="">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <i onclick="Toggle1()" id="btn1" class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-share"></i>
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                        <p class="likes">12.321 likes</p>
+                        <p class="description"><span>username</span>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Et, laboriosam reiciendis. In tempore totam cupiditate itaque, molestias omnis, dolore
+                            eius fugiat ab illum facilis hic labore? Deserunt nostrum itaque nemo.
+                        </p>
+                        <p class="post-time">2 hours ago</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="More comments...">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="img/story3.jpg" alt="">
+                            </div>
+                            <p class="username">
+                                User_name_3
+                            </p>
+                        </div>
+                        <img src="img/option.PNG" class="options" alt="">
+                    </div>
+                    <img src="img/wallpapers-desktop-15-4-2018 (9).jpg" class="post-img" alt="">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <i onclick="Toggle()" id="btn" class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-share"></i>
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                        <p class="likes">1.324 likes</p>
+                        <p class="description"><span>username</span>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Et, laboriosam reiciendis. In tempore totam cupiditate itaque, molestias omnis, dolore
+                            eius fugiat ab illum facilis hic labore? Deserunt nostrum itaque nemo.
+                        </p>
+                        <p class="post-time">6 minutes ago</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="More comments...">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="img/story1.png" alt="">
+                            </div>
+                            <p class="username">
+                                User_name_1
+                            </p>
+                        </div>
+                        <img src="img/option.PNG" class="options" alt="">
+                    </div>
+                    <img src="img/wallpapers-desktop-15-4-2018 (10).jpg" class="post-img" alt="">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <i onclick="Toggle()" id="btn" class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-share"></i>
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                        <p class="likes">1.506 likes</p>
+                        <p class="description"><span>username</span>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Et, laboriosam reiciendis. In tempore totam cupiditate itaque, molestias omnis, dolore
+                            eius fugiat ab illum facilis hic labore? Deserunt nostrum itaque nemo.
+                        </p>
+                        <p class="post-time">15 minutes ago</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="More comments...">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="img/story4.png" alt="">
+                            </div>
+                            <p class="username">
+                                User_name_4
+                            </p>
+                        </div>
+                        <img src="img/option.PNG" class="options" alt="">
+                    </div>
+                    <img src="img/wallpapers-desktop-15-4-2018 (11).jpg" class="post-img" alt="">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <i onclick="Toggle()" id="btn" class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-share"></i>
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                        <p class="likes">106 likes</p>
+                        <p class="description"><span>username</span>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Et, laboriosam reiciendis. In tempore totam cupiditate itaque, molestias omnis, dolore
+                            eius fugiat ab illum facilis hic labore? Deserunt nostrum itaque nemo.
+                        </p>
+                        <p class="post-time">5 minutes ago</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="More comments...">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="img/story6.png" alt="">
+                            </div>
+                            <p class="username">
+                                User_name_6
+                            </p>
+                        </div>
+                        <img src="img/option.PNG" class="options" alt="">
+                    </div>
+                    <img src="img/wallpapers-desktop-15-4-2018 (12).jpg" class="post-img" alt="">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <i onclick="Toggle()" id="btn" class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-share"></i>
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                        <p class="likes">16 likes</p>
+                        <p class="description"><span>username</span>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Et, laboriosam reiciendis. In tempore totam cupiditate itaque, molestias omnis, dolore
+                            eius fugiat ab illum facilis hic labore? Deserunt nostrum itaque nemo.
+                        </p>
+                        <p class="post-time">1 minutes ago</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="More comments...">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right-col">
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="img/profile.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="username">viethoang_bui</p>
+                        <p class="sub-text">Viet Hoang Bui</p>
+                    </div>
+                    <button class="action-btn">Switch</button>
+                </div>
+                <div class="suggestion-side">
+                <p class="suggestion-text">Suggestions for you</p>
+                <button class="view-all-btn">View all</button>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="img/story1.png" alt="">
+                    </div>
+                    <div>
+                        <p class="username">user_name_1</p>
+                        <p class="sub-text">Suggestions for you</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="img/story2.png" alt="">
+                    </div>
+                    <div>
+                        <p class="username">user_name_2</p>
+                        <p class="sub-text">Suggestions for you</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="img/story3.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="username">user_name_3</p>
+                        <p class="sub-text">Suggestions for you</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="img/story4.png" alt="">
+                    </div>
+                    <div>
+                        <p class="username">user_name_4</p>
+                        <p class="sub-text">Suggestions for you</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="img/story5.png" alt="">
+                    </div>
+                    <div>
+                        <p class="username">user_name_5</p>
+                        <p class="sub-text">Suggestions for you</p>
+                    </div>
+                    <button class="action-btn">follow</button>
+                </div>
+                <div class="footer">
+                    <h5 class="f-w-500 ">
+                        Introduce &bull;Help &bull; Newspapers &bull; API &bull; Privacy &bull; Rules &bull;
+                    </h5>
+                    <h5 class="f-w-500">Position &bull; The most relevant account &bull; Hashtags &bull; Language &bull;
+                    </h5>
+                    <h5 class="f-w-500" style="margin-top: 30px;">&copy; 2022 INSTAGRAM FROM META
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
