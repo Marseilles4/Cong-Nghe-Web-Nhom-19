@@ -102,6 +102,39 @@
                         <button class="comment-btn">post</button>
                     </div>
                 </div>
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="img/3.jpg" alt="">
+                            </div>
+                            <p class="username">
+                                User_name_3
+                            </p>
+                        </div>
+                        <img src="img/option.PNG" class="options" alt="">
+                    </div>
+                    <img src="img/wallpapers-desktop-15-4-2018 (9).jpg" class="post-img" alt="">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <i onclick="Toggle()" id="btn" class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-share"></i>
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                        <p class="likes">1.324 likes</p>
+                        <p class="description"><span>username</span>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Et, laboriosam reiciendis. In tempore totam cupiditate itaque, molestias omnis, dolore
+                            eius fugiat ab illum facilis hic labore? Deserunt nostrum itaque nemo.
+                        </p>
+                        <p class="post-time">6 minutes ago</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="More comments...">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
             </div>
             <div class="right-col">
                 <div class="profile-card">

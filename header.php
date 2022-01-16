@@ -14,6 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/header.css">
 </head>
 
@@ -23,7 +24,7 @@
             <img src="img/1.png" class="brand-img" alt="">
             <input type="text" class="search-box" placeholder="search">
             <div class="nav-items">
-                <img src="img/home.PNG" class="icon" alt="">
+                <img src="img/home.PNG" onclick="home()" class="icon" id="home" alt="">
                 <img src="img/messenger.PNG" class="icon" alt="">
                 <img src="img/add.PNG" class="icon" alt="">
                 <img src="img/explore.PNG" class="icon" alt="">
@@ -40,7 +41,7 @@
                             <span class="material-icons-outlined">
                                 account_circle
                             </span>
-                                <a href="profile.php?id=<?php  ?>">
+                                <a href="profile.php">
                                     <p>Personal page</p>
                                 </a>
                         </div>
@@ -81,5 +82,11 @@
         }else{
             menuBox.style.display = "block";
         }
+    }
+    </script>
+    <script>
+        function home(){
+        var menuBox = document.getElementById('home'); 
+        location.assign("index.php");
     }
     </script>
